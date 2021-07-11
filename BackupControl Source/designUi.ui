@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>780</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Программа верификации (односторонней, см. справку) идентичности содержимого каталогов</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>600</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>(для всех файлов вычисляются и затем сравниваются хеши по алгоритму MD5)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>740</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>исходный каталог</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>740</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>синхронизированный каталог</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>580</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Проверить идентичность содержимого каталогов
+и записать результат в log.txt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>150</y>
+      <width>110</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Остановить
+проверку</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="action_6"/>
+    <addaction name="action_4"/>
+    <addaction name="action_7"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Выбрать исходный каталог</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Выбрать синхронизированный каталог</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Проверить идентичность содержимого каталогов</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>О резервном копировании методом синхронизации</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Об односторонней идентичности содержимого каталогов</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
